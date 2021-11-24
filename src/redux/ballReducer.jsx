@@ -4,7 +4,7 @@ const initialState = {
 const ballReducer = (state=initialState, action) => {
     switch(action.type) {
         case 'BUY_BALL':
-            return {...state, balls:state.balls-1} //immutable change
+            return {...state, balls:state.balls-action.payload} //immutable change
         case 'SELL_BALL':
             return {...state, balls:state.balls+1}
         default:
