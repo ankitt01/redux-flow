@@ -10,7 +10,7 @@ function Bat(props) {
 }
 const mapStateToProps = (state) => { //to get value from state as props
     return {
-        bats: state.bats
+        bats: state.bat.bats
     }
 }
 
